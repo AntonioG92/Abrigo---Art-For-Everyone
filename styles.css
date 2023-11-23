@@ -1,4 +1,9 @@
 
+  html{
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
   body{
     margin: 0px;
     padding: 0px;
@@ -31,6 +36,7 @@
   /**Main Part - Titles**/
 .main{
     height: 150px;
+    width: 100%;
     margin: 0 auto;
     padding: 0px 0px;
     
@@ -43,9 +49,6 @@ h1{
     padding: 0px 0px;
     margin: 0px 0px;
     flex-shrink: 1;
-    width: 100%;
-    min-width: 320px;
-    max-width: 1024px;
   }
 
   @media only screen and (max-width: 700px) {
@@ -120,11 +123,6 @@ h1{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.navbar li:active{
-    border;
-}
-
-
 @media only screen and (max-width: 700px){
 
     .navbar{
@@ -147,7 +145,6 @@ h1{
 /**Main Image - Titles**/
 
 .mainimage{
-border: 1px solid red;
 margin: 0 auto;
 width: 100%;
 height: 400px;
@@ -226,7 +223,6 @@ letter-spacing: 15px;
 
 .artsquare{
     width: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -351,10 +347,9 @@ letter-spacing: 15px;
 /** Location **/
 
 .alllocation{
-    border: 1px solid red;
     width: 100%;
     height: 500px;
-    margin: 0 auto;
+
     
 }
 
@@ -383,14 +378,13 @@ letter-spacing: 15px;
 }
 
 .location{
-    border: 1px solid red;
     margin: 0px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap-reverse;
     justify-content: center;
     align-content: flex-start;
-    padding: 0px 100px;
+    padding: 0px 0px;
     gap: 25px;
 }
 
@@ -399,11 +393,32 @@ letter-spacing: 15px;
     height: 350px;
 }
 
+@media only screen and (max-width: 880px){
+    .alllocation{
+        height: 600px;
+        width: auto;
+    }
+
+    .map iframe{
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .map iframe{
+        width: auto;
+        height: 200px;
+    }
+}
+
+
 /** Quote**/
 
 .end{
-    padding: 10px 50px;
+    padding: 10px 0px;
     background-color: #6666ff;
+    width: 100%;
 }
 
 .quote{
@@ -411,13 +426,14 @@ letter-spacing: 15px;
     font-size: 20px;
     letter-spacing: 5px;
     text-align: center;
-    margin: 0px 0px;
+    margin: 0px 15px;
 }
 
 .ass{
     color: white;
     font-size: 10px;
     letter-spacing: 5px;
+    margin: 0px 15px;
     text-align: right;
     text-transform: capitalize;
 }
@@ -425,11 +441,19 @@ letter-spacing: 15px;
 /**copyright**/
 
 .copyright{
+    display: flex;
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0.8);
     color: #6666ff;
-    padding: 10px;
     width: 100%;
-    margin: 0 auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.copyright p{
     letter-spacing: 5px;
+    margin: 0 auto;
+
 }
