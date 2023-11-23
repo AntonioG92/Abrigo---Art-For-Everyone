@@ -1,0 +1,435 @@
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    min-width: 200px;
+  }
+
+ .navbar ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+  h3{
+    font-size: 25px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  /**Main Part - Titles**/
+.main{
+    height: 150px;
+    margin: 0 auto;
+    padding: 0px 0px;
+    
+}
+
+h1{
+    font-size: 100px;
+    letter-spacing: 50px;
+    color:black;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    flex-shrink: 1;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+  }
+
+  @media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+
+  .main {
+    height: auto; /* Allow the height to adjust based on content */
+    text-align: center; /* Center the text */
+  }
+
+  h1 {
+    font-size: 50px; /* Adjust the font size for smaller screens */
+    letter-spacing: 10px; /* Adjust the letter spacing for smaller screens */
+  }
+
+  .mainimage {
+    height: 300px; /* Adjust the height for smaller screens */
+    background-size: contain; /* Adjust background size to contain within the element */
+    background-position: center; /* Center the background image */
+    font-size: 30px; /* Adjust font size for smaller screens */
+    letter-spacing: 8px; /* Adjust letter spacing for smaller screens */
+  }
+
+}
+
+/**Navigation - Titles**/
+
+.navigation{
+    width: 100%;
+    height: 75px;
+    background-color: #6666ff;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin:0px;
+    padding:0px;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+
+.navfirst{
+    display:flex;
+    justify-content: flex-start;
+    
+}
+
+.navbar li{
+    border: 1px solid black;
+    display: block;
+    padding: 10px 20px;
+    margin: 5px 30px;
+    border-radius: 20px;
+    
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.navbar li:hover{
+    cursor:pointer;
+    background-color:#e6e6ff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.navbar li:active{
+    border;
+}
+
+
+@media only screen and (max-width: 700px){
+
+    .navbar{
+        justify-content:center;
+    }
+
+    .navfirst{
+        justify-content: center; 
+    }
+
+    .navbar li{
+        display: block;
+        padding: 5px 10px;
+        margin: 5px 15px;
+        border-radius: 15px;
+    
+    }
+}
+
+/**Main Image - Titles**/
+
+.mainimage{
+border: 1px solid red;
+margin: 0 auto;
+width: 100%;
+height: 400px;
+background-image: url("./imagens/pintura\ fundo.jpg");
+background-position:75% 25%;
+background-repeat: no-repeat;
+background-size: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 40px;
+letter-spacing: 15px;
+}
+
+.mainimage h2{
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.mainimage span{
+    color: turquoise;
+}
+
+@media only screen and (max-width: 700px){
+    .mainimage{
+        font-size: 30px;
+        height: 400px;
+        width: auto;
+        margin: 0px 0px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .mainimage{
+        font-size: 15px;
+    }
+}
+
+/**Mission - Titles**/
+
+.mission h3{
+    text-align: center;
+}
+
+.undermission{
+    width: 100%;
+    font-size: 20px;
+}
+
+.mission{
+    max-width: 1200px;
+    text-align: justify;
+    padding: 30px 15px; 
+    margin: 0 auto;
+}
+
+.mission p{
+    font-size: 20px;
+    line-break: 4px;
+    line-height: 35px;
+}
+
+
+/** Arts sections**/
+
+.arts {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.artsquare{
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    padding: 0px 5px;
+    gap: 10px;
+}
+
+.artsquare ul{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.artsquare li{
+    display: block;
+    height: 100%;
+    flex-basis: 600px; /* Set a flex basis to control item width */
+    flex-shrink: 1; /* Allow items to grow to fill the space */
+    min-height: 200px; /* Set a minimum height */
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artsquare a{
+    padding: 30px 30px;
+    background-color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 150px;
+}
+
+.artsquare a:hover{
+    cursor:pointer;
+    opacity:0;
+}
+
+/** family sections**/
+.team{
+    width: 100%; /* Set width to 100% */
+    margin: 0 auto; /* Center the section */
+    text-align: center;
+}
+
+.painting{
+    background-image: url("./imagens/pintura.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.drawing{
+    background-image: url("./imagens/1259.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.photography{
+    background-image: url("./imagens/ftg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.ceramic{
+    background-image: url("./imagens/ceramic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.team h3{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.members{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.combi{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    text-align: justify;
+    justify-content: center;  
+    background-color: #6666ff;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.combi img{
+    border-radius: 150px;
+    height: 200px;
+    width: 200px;
+    border-image:stretch;
+}
+
+.combi p{
+    background-color: hsla(0, 0%, 100%, 0.5);
+    padding: 15px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    
+}
+
+.combi h4{
+    text-align: center;
+    font-size: 15px;
+}
+
+/** Location **/
+
+.alllocation{
+    border: 1px solid red;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    
+}
+
+.alllocation h3{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px 0px;
+}
+
+.adress, .map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 2;
+}
+
+.adress{
+    display:flex;
+    line-height:20px;
+    
+}
+
+.loc h4{
+    text-align: center;
+}
+
+.location{
+    border: 1px solid red;
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 0px 100px;
+    gap: 25px;
+}
+
+.map iframe{
+    width: 500px;
+    height: 350px;
+}
+
+/** Quote**/
+
+.end{
+    padding: 10px 50px;
+    background-color: #6666ff;
+}
+
+.quote{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 0px 0px;
+}
+
+.ass{
+    color: white;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+/**copyright**/
+
+.copyright{
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    color: #6666ff;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 5px;
+}
